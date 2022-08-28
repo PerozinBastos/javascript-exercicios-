@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Esse é meu treinamento">
+    <title>Verificador de Idade</title>
+</head>
+<body>                                  
+<header>
+<h1>Verificador de Idade</h1>
+</header>
+<section>
+
+<div class="principal">
+    <p>Ano de Nascimento:   <!--ficará na mesma linha-->
+    <input type="number" name="txtano" id="txtano" min="0">
+    </p>
+    <p>   <!--pulou uma linha-->
+    Sexo:
+    <input type="radio" name="radsex" id="masc" checked>    <!--radio caixa de seleção, primeiro da página vem na posição [0]-->
+    <label for="masc">Masculino</label> <!--label nome, caption, na frente do input-->
+    <input type="radio" name="radsex" id="fem">       <!--mesmo name, se não ao marca um, o outro ficará marcado, segundo da página vem na posição [1]-->
+    <label for="fem">Feminino</label>      <!--Nome na frente do input-->
+    </p>
+    <P>
+    <input type="button" value="Verificar" onclick="verificar()">  <!--onclick para ativar o javascript-->
+    </P>
+</div>
+<div class="resultado">
+    Prencha os dados acima para ver o resultado  <!--sem paragrafo para não pular linha-->
+</div>
+
+
+</section>
+<footer>
+<p>&copy;Guilherme Perozin</p>   <!--&copy; vem o simbolo de copyright-->
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
